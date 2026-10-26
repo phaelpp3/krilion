@@ -36,6 +36,12 @@ Os testes de navegador usam Chromium em `/usr/bin/chromium`, quando disponível,
 
 O build gera **`dist/`**, que pode ser publicado em qualquer hospedagem estática com HTTPS. Não é necessário servidor de aplicação. O código não faz chamadas a serviços externos durante a partida.
 
+### GitHub Pages
+
+Em **Settings → Pages → Build and deployment → Source**, selecione **GitHub Actions**. O workflow `.github/workflows/deploy-pages.yml` instala as dependências, testa, compila e publica somente `dist/` a cada atualização da `main`. Também é possível executá-lo manualmente na aba **Actions**.
+
+Os caminhos de assets são relativos, permitindo servir o jogo em `https://phaelpp3.github.io/krilion/` ou em outra subpasta. Não publique a raiz do código-fonte diretamente: seu `index.html` é uma entrada de desenvolvimento que referencia TypeScript; o navegador precisa do JavaScript gerado por `npm run build`.
+
 ## Estrutura
 
 ```text
