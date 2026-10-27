@@ -2,9 +2,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { CSSProperties, FormEvent } from 'react';
 import GameShell from './components/GameShell';
 import OceanScene from './components/OceanScene';
+import AnswerExplorer from './components/AnswerExplorer';
 import { CATEGORIES, QUESTIONS } from './data/questions';
 import type { CategoryId } from './data/questions';
-import { DAILY_ROUNDS, ROUND_SECONDS, evaluateAnswer, getDailyQuestions, getInfiniteQuestion, loadDailyProgress, saveDailyProgress } from './lib/game';
+import { DAILY_ROUNDS, ROUND_SECONDS, evaluateAnswer, getDailyQuestions, getInfiniteQuestion, hasPreviousCatalogProgress, loadDailyProgress, saveDailyProgress } from './lib/game';
 import type { DailyProgress, RoundResult } from './lib/game';
 import { getDailyDate, loadPreferences } from './lib/preferences';
 import type { Preferences } from './lib/preferences';
@@ -40,7 +41,7 @@ export default function App() {
   const [category, setCategory] = useState<CategoryId>('todos');
   const [answer, setAnswer] = useState('');
   const [clock, setClock] = useState(Date.now());
-  const [notice, setNotice] = useState('');
+  const [notice, setNotice] = useState(() => !daily.started && hasPreviousCatalogProgress(daily.date) ? 'O diário foi renovado com perguntas do dia a dia. Suas estatísticas anteriores foram mantidas.' : '');
   const [saveFailed, setSaveFailed] = useState(false);
   const [shareFallback, setShareFallback] = useState('');
   const [statsRevision, setStatsRevision] = useState(0);
@@ -185,7 +186,7 @@ export default function App() {
         {active && question && <div className="game-round" key={question.id}>
           <div className="game-round-top"><span className="game-category">{CATEGORIES.find((item) => item.id === question.category)?.label}</span><span className="game-round-number">Pergunta {progress.results.length + 1}{mode === 'daily' ? ' de 7' : ''}</span></div>
           <div className={`game-timer ${seconds <= 5 ? 'urgent' : ''}`} role="timer" aria-label={`${seconds} segundos restantes`}><div className="game-timer-track"><div style={{ '--remaining': `${seconds / ROUND_SECONDS * 100}%` } as CSSProperties} /></div><span>{seconds}<small>s</small></span></div>
-          <h1 className="game-question">{question.prompt}</h1><p className="game-hint">{question.hint}</p>
+          <h1 className="game-question">{question.prompt}</h1><p className="game-hint">{question.hint}</p><span className="game-answer-count">{number(question.answers.length)} respostas aceitas</span>
           <form onSubmit={submit} className="game-answer-form"><label htmlFor="answer">Sua resposta mais rara</label><input id="answer" ref={answerInput} value={answer} onChange={(event) => setAnswer(event.target.value)} maxLength={100} autoComplete="off" autoCapitalize="sentences" spellCheck={false} placeholder="Vá além da primeira ideia…" /><button type="submit" className="primary-button" disabled={!answer.trim()}>Mergulhar <span aria-hidden="true">↓</span></button></form>
           <div className="game-answer-meta"><span>Uma resposta. Sem se preocupar com acentos.</span><button className="game-text-button" onClick={() => finish('')}>Pular pergunta</button></div>
           <p className="game-timer-help" role="status">{seconds <= 5 ? "Restam menos de 6 segundos. Envie sua resposta!" : "Seu tempo continua se você sair desta tela."}</p>
@@ -198,7 +199,7 @@ export default function App() {
           <div className="game-points">+{number(last.points)} <span>m</span></div>
           <p className="game-result-answer">{last.correct ? <><strong>{last.answerLabel}</strong> levou você mais fundo.</> : last.input ? <><strong>“{last.input}”</strong> não está entre as respostas aceitas para esta pergunta.</> : 'Sem resposta nesta rodada. Ainda há muito para descobrir.'}</p>
           {last.correct && <span className="game-rarity">{rarityLabel} <span>· raridade estimada</span></span>}
-          {lastQuestion && <details className="game-answer-details"><summary>Explorar respostas desta pergunta</summary><p>{lastQuestion.prompt}</p><div>{[...lastQuestion.answers].sort((a, b) => b.rarity - a.rarity).map((item) => <span key={item.label}>{item.label}</span>)}</div></details>}
+          {lastQuestion && <AnswerExplorer key={lastQuestion.id} question={lastQuestion} />}
           <button className="primary-button game-start" onClick={nextQuestion}>{mode === 'daily' ? `Próxima pergunta · ${progress.results.length + 1}/7` : 'Continuar mergulhando'} <span aria-hidden="true">↓</span></button>
           {mode === 'infinite' && <button className="game-text-button game-change-category" onClick={() => { setInfinite(freshInfinite()); sessionId.current = `${Date.now()}-${Math.random()}`; }}>Escolher outro assunto</button>}
         </div>}
