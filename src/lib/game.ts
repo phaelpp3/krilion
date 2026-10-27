@@ -1,11 +1,11 @@
-import { QUESTIONS } from '../data/questions';
-import type { CategoryId, Question } from '../data/questions';
+import { CATALOG_VERSION, QUESTIONS } from '../data/questions';
+import type { Answer, CategoryId, Question } from '../data/questions';
 import { createSeededRandom, getDailyDate, getDailySeed } from './preferences';
 import type { PreferenceStorage } from './preferences';
 
 export const ROUND_SECONDS = 25;
 export const DAILY_ROUNDS = 7;
-export const DAILY_STORAGE_PREFIX = 'krilion.daily.v1:';
+export const DAILY_STORAGE_PREFIX = `krilion.daily.v${CATALOG_VERSION}:`;
 
 export interface AnswerEvaluation {
   correct: boolean;
@@ -40,12 +40,24 @@ export function normalizeAnswer(input: string): string {
     .replace(/[^\p{L}\p{N}]/gu, '');
 }
 
+const answerIndexes = new WeakMap<Question, Map<string, Answer>>();
+
+function answerIndex(question: Question): Map<string, Answer> {
+  let index = answerIndexes.get(question);
+  if (!index) {
+    index = new Map();
+    for (const answer of question.answers) {
+      for (const name of [answer.label, ...(answer.aliases ?? [])]) index.set(normalizeAnswer(name), answer);
+    }
+    answerIndexes.set(question, index);
+  }
+  return index;
+}
+
 /** Rarity values are editorial estimates, never measured player percentages. */
 export function evaluateAnswer(question: Question, input: string): AnswerEvaluation {
   const normalized = normalizeAnswer(input);
-  const answer = normalized ? question.answers.find((candidate) =>
-    [candidate.label, ...(candidate.aliases ?? [])]
-      .some((alias) => normalizeAnswer(alias) === normalized)) : undefined;
+  const answer = normalized ? answerIndex(question).get(normalized) : undefined;
   if (!answer) {
     return {
       correct: false, answerLabel: null, points: 0, rarity: 0,
@@ -72,7 +84,14 @@ export function getDailyQuestions(dateKey: string = getDailyDate()): Question[] 
     const j = Math.floor(random() * (i + 1));
     [questions[i], questions[j]] = [questions[j], questions[i]];
   }
-  return questions.slice(0, DAILY_ROUNDS);
+  // At most two prompts per subject guarantees four different subjects per day.
+  const counts = new Map<string, number>();
+  return questions.filter((question) => {
+    const count = counts.get(question.category) ?? 0;
+    if (count === 2) return false;
+    counts.set(question.category, count + 1);
+    return true;
+  }).slice(0, DAILY_ROUNDS);
 }
 
 /** Repeats become eligible only after every question in the chosen subject was seen. */
@@ -150,6 +169,12 @@ export function loadDailyProgress(
   } catch {
     return empty;
   }
+}
+
+/** Old sessions remain stored, but their specialist prompts never enter the new catalog. */
+export function hasPreviousCatalogProgress(dateKey: string = getDailyDate(), storage: PreferenceStorage | null = browserStorage()): boolean {
+  try { return Boolean(storage?.getItem(`krilion.daily.v1:${dateKey}`)); }
+  catch { return false; }
 }
 
 /** False means the current session can continue, but reload persistence is unavailable. */

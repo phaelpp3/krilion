@@ -1,11 +1,13 @@
 # Krilion 🦐
 
-Jogo de conhecimentos gerais em português: encontre uma resposta válida e pouco óbvia para mergulhar mais fundo. Versão independente, gratuita e inspirada nas regras de Krillion descritas pelo usuário, com interface, ilustrações e animações próprias.
+Jogo de respostas raras em português: encontre uma resposta válida e pouco óbvia para mergulhar mais fundo. Versão independente e gratuita inspirada em Krillion, com interface, ilustrações e animações próprias.
 
 ## Jogar
 
 - **Diário:** sete perguntas iguais para todos na mesma versão do catálogo. Cada pergunta dura 25 segundos e rende até 1.000 metros; o máximo é 7.000 metros. Um novo desafio começa à meia-noite de **America/Sao_Paulo**.
-- **Infinito:** rodadas ilimitadas de geografia, ciência, cultura, natureza ou todos os assuntos. As perguntas não se repetem dentro de um ciclo; ao esgotar o assunto, um novo ciclo começa.
+- **Infinito:** rodadas ilimitadas de dia a dia, comida e diversão, natureza e lugares do mundo. As perguntas não se repetem dentro de um ciclo; ao esgotar o assunto, um novo ciclo começa.
+- **Perguntas familiares:** 27 temas como animais, frutas, profissões, objetos de cozinha, comidas, filmes e cidades. De 100 a 5.289 respostas em cada pergunta; 10.211 entradas no total, contando cada pergunta separadamente. O diário mistura os quatro assuntos.
+- Busca de respostas após a rodada, com sinônimos, nomes populares e variantes regionais.
 - **Seis temas visuais:** oceano, claro, floresta, pôr do sol, lavanda e alto contraste.
 - Mergulho animado, camarão explorador em SVG, bolhas, peixes, raios de luz e efeitos sonoros opcionais.
 - Progresso diário, estatísticas e preferências salvos no navegador. Compartilhamento de resultado sem revelar respostas.
@@ -48,18 +50,21 @@ Os caminhos de assets são relativos, permitindo servir o jogo em `https://phael
 src/App.tsx                 Fluxo de jogo, cronômetro e resultados
 src/components/GameShell.tsx Navegação, temas e modais
 src/components/OceanScene.tsx Ilustração e animações submarinas
-src/data/questions.ts       Perguntas, respostas, aliases e raridades
+src/data/questions.ts       Catálogo, assuntos e versão
+src/data/SOURCES.md         Fontes, critérios de curadoria e licenças
 src/lib/game.ts             Seleção diária, validação e persistência
 src/lib/preferences.ts      Temas, data de Brasília e aleatoriedade estável
 src/lib/statistics.ts       Estatísticas locais e sequência diária
 tests/browser.spec.ts       Testes funcionais no Chromium
 ```
 
-Para ampliar o catálogo, mantenha IDs estáveis, enunciados objetivos e respostas completas para o escopo de cada pergunta. Os testes verificam colisões de aliases, reconhecimento das respostas, limites de raridade e sete perguntas distintas no diário. Mudanças no catálogo ou no algoritmo podem alterar desafios; a igualdade diária é garantida entre clientes da mesma versão.
+Para ampliar o catálogo, use perguntas familiares e listas amplas, seguindo [os critérios de curadoria](src/data/SOURCES.md). Os testes verificam um mínimo de 80 respostas por pergunta, exemplos comuns, colisões de aliases, raridade e diversidade do diário. Mudanças no catálogo ou no algoritmo podem alterar desafios; a igualdade diária é garantida entre clientes da mesma versão.
 
 ## Persistência e limites
 
 O prazo absoluto de uma pergunta diária é salvo ao começar. Recarregar a página, abrir menus ou deixar a aba não reinicia os 25 segundos. Após recarregar, a rodada expirada é registrada uma única vez. O diário concluído permanece disponível para consulta; o modo infinito permite continuar jogando.
+
+O catálogo 2 inicia um novo diário em uma chave de armazenamento separada. Sessões do catálogo anterior não são retomadas com perguntas incompatíveis; os dados antigos e as estatísticas gerais são preservados. Quem já jogou o diário anterior vê um aviso sobre a atualização. Como as estatísticas contam um diário por data, jogar novamente no dia da migração não duplica esse total.
 
 O histórico do infinito é acumulado nas estatísticas; a partida infinita em andamento vive na sessão e reinicia ao recarregar. Se o armazenamento estiver bloqueado, a interface avisa e permite jogar na sessão atual. Não há sincronização entre dispositivos nem ranking global. Alterar o armazenamento ou relógio do dispositivo pode modificar resultados; este jogo local não implementa competição verificada por servidor.
 
@@ -67,8 +72,8 @@ Não há analytics ou cookies de terceiros. Limpar os dados do navegador remove 
 
 ## Referência
 
-O site de referência retornou HTTP 403 durante a implementação. As regras foram implementadas a partir da descrição fornecida, sem acesso à interface original para comparação visual ou tradução literal. Todos os textos visíveis desta implementação estão em português.
+O formato das perguntas foi revisado após consultar o [diário público](https://krillion.io/api/today) e a [FAQ do original](https://krillion.io/faq). O catálogo foi elaborado em português para oferecer muitas respostas familiares e possibilidades menos óbvias. Os detalhes da consulta e as fontes dos dados estão em [SOURCES.md](src/data/SOURCES.md).
 
 ## Licença
 
-MIT para o código e as ilustrações originais deste repositório. Krillion e seus conteúdos originais pertencem aos respectivos titulares; este projeto não é afiliado ao jogo original.
+MIT para o código e as ilustrações originais deste repositório. Os dados de municípios também usam MIT, com o aviso do autor preservado em `public/licenses/`. Krillion e seus conteúdos originais pertencem aos respectivos titulares; este projeto não é afiliado ao jogo original.

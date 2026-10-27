@@ -4,6 +4,7 @@ import type { Question } from '../data/questions';
 import {
   DAILY_ROUNDS, DAILY_STORAGE_PREFIX, ROUND_SECONDS, evaluateAnswer, getDailyQuestions,
   getInfiniteQuestion, loadDailyProgress, normalizeAnswer, saveDailyProgress,
+  hasPreviousCatalogProgress,
 } from './game';
 import type { DailyProgress, RoundResult } from './game';
 import type { PreferenceStorage } from './preferences';
@@ -96,6 +97,17 @@ describe('question selection', () => {
 
 describe('daily session persistence', () => {
   const date = '2026-10-26';
+
+  it('keeps legacy data intact while starting the new catalog in its own namespace', () => {
+    const storage = memoryStorage();
+    const old = JSON.stringify({ date, started: true, results: [], activeQuestionId: 'ciencia-planetas', deadline: 123456 });
+    storage.setItem(`krilion.daily.v1:${date}`, old);
+    expect(hasPreviousCatalogProgress(date, storage)).toBe(true);
+    expect(loadDailyProgress(date, storage)).toEqual({ date, started: false, results: [] });
+    expect(saveDailyProgress(loadDailyProgress(date, storage), storage)).toBe(true);
+    expect(storage.getItem(`krilion.daily.v1:${date}`)).toBe(old);
+    expect(hasPreviousCatalogProgress(date, null)).toBe(false);
+  });
 
   it('restores answers and the original absolute timer deadline after a reload', () => {
     const storage = memoryStorage();

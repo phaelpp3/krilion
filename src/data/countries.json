@@ -1,0 +1,1343 @@
+[
+  {
+    "label": "Afeganistão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Albânia",
+    "aliases": [
+      "Albânia"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Alemanha",
+    "rarity": 0.08,
+    "aliases": []
+  },
+  {
+    "label": "Andorra",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Angola",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Anguilla",
+    "aliases": [
+      "Anguila"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Antígua e Barbuda",
+    "aliases": [
+      "Antigua e Barbuda"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Argentina",
+    "rarity": 0.08,
+    "aliases": []
+  },
+  {
+    "label": "Argélia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Armênia",
+    "aliases": [
+      "Arménia"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Aruba",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Arábia Saudita",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Austrália",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Azerbaijão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Bahamas",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Bahrein",
+    "aliases": [
+      "Bahrain"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Bangladesh",
+    "aliases": [
+      "Bangladeche"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Barbados",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Belarus",
+    "aliases": [
+      "Bielorrússia"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Belize",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Benim",
+    "rarity": 0.65,
+    "aliases": [
+      "Benin"
+    ]
+  },
+  {
+    "label": "Bermudas",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Bolívia",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Bonaire",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Botsuana",
+    "rarity": 0.65,
+    "aliases": [
+      "Botswana"
+    ]
+  },
+  {
+    "label": "Brasil",
+    "rarity": 0.08,
+    "aliases": []
+  },
+  {
+    "label": "Brunei",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Bulgária",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Burkina Faso",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Burundi",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Butão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Bélgica",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Bósnia e Herzegovina",
+    "aliases": [
+      "Bósnia"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Cabo Verde",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Camarões",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Camboja",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Canadá",
+    "aliases": [],
+    "rarity": 0.08
+  },
+  {
+    "label": "Catar",
+    "aliases": [
+      "Qatar"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Cazaquistão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Chade",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Chile",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "China",
+    "aliases": [],
+    "rarity": 0.08
+  },
+  {
+    "label": "Chipre",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Colômbia",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Comores",
+    "rarity": 0.65,
+    "aliases": [
+      "Comoros"
+    ]
+  },
+  {
+    "label": "Coreia do Norte",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Coreia do Sul",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Costa Rica",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Costa do Marfim",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Croácia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Cuba",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Curaçao",
+    "aliases": [
+      "Curaçau"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Dinamarca",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Djibuti",
+    "rarity": 0.65,
+    "aliases": [
+      "Djibouti"
+    ]
+  },
+  {
+    "label": "Dominica",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Egito",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "El Salvador",
+    "rarity": 0.65,
+    "aliases": [
+      "Salvador"
+    ]
+  },
+  {
+    "label": "Emirados Árabes Unidos",
+    "aliases": [
+      "EAU"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Equador",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Eritreia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Escócia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Eslováquia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Eslovênia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Espanha",
+    "rarity": 0.08,
+    "aliases": []
+  },
+  {
+    "label": "Essuatíni",
+    "rarity": 0.65,
+    "aliases": [
+      "Eswatini",
+      "Suazilândia"
+    ]
+  },
+  {
+    "label": "Estados Unidos",
+    "aliases": [
+      "EUA",
+      "USA",
+      "Estados Unidos da América"
+    ],
+    "rarity": 0.08
+  },
+  {
+    "label": "Estônia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Etiópia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Fiji",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Filipinas",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Finlândia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "França",
+    "rarity": 0.08,
+    "aliases": []
+  },
+  {
+    "label": "Gabão",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Gana",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Geórgia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Gibraltar",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Granada",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Groenlândia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Grécia",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Guam",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Guatemala",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Guernsey",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Guiana",
+    "rarity": 0.65,
+    "aliases": [
+      "Guyana"
+    ]
+  },
+  {
+    "label": "Guiana Francesa",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Guiné",
+    "rarity": 0.65,
+    "aliases": [
+      "Guiné-Conacri"
+    ]
+  },
+  {
+    "label": "Guiné Equatorial",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Guiné-Bissau",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Gâmbia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Haiti",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Honduras",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Hong Kong",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Hungria",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Ilha Christmas",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilha Norfolk",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilha de Man",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Aland",
+    "aliases": [
+      "Åland"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Cayman",
+    "aliases": [
+      "Ilhas Caimã"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Cocos",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Cook",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Faroé",
+    "aliases": [
+      "Ilhas Faroe"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Malvinas",
+    "aliases": [
+      "Falklands"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Marshall",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Salomão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Turks e Caicos",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Virgens Americanas",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Ilhas Virgens Britânicas",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Indonésia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Inglaterra",
+    "aliases": [],
+    "rarity": 0.08
+  },
+  {
+    "label": "Iraque",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Irlanda",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Irlanda do Norte",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Irã",
+    "aliases": [
+      "Irão"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Islândia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Israel",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Itália",
+    "rarity": 0.08,
+    "aliases": []
+  },
+  {
+    "label": "Iêmen",
+    "aliases": [
+      "Iémen"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Jamaica",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Japão",
+    "aliases": [],
+    "rarity": 0.08
+  },
+  {
+    "label": "Jersey",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Jordânia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Kiribati",
+    "aliases": [],
+    "rarity": 1
+  },
+  {
+    "label": "Kosovo",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Kuwait",
+    "aliases": [
+      "Kuweit"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Laos",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Lesoto",
+    "rarity": 0.65,
+    "aliases": [
+      "Lesotho"
+    ]
+  },
+  {
+    "label": "Letônia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Libéria",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Liechtenstein",
+    "aliases": [
+      "Listenstaine"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Lituânia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Luxemburgo",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Líbano",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Líbia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Macau",
+    "aliases": [
+      "Macao"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Macedônia do Norte",
+    "aliases": [
+      "Macedônia"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Madagascar",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Maldivas",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Mali",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Malta",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Malásia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Maláui",
+    "rarity": 0.65,
+    "aliases": [
+      "Malawi",
+      "Malaui"
+    ]
+  },
+  {
+    "label": "Marrocos",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Martinica",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Mauritânia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Maurício",
+    "rarity": 0.65,
+    "aliases": [
+      "Maurícia",
+      "Ilhas Maurício",
+      "Mauritius"
+    ]
+  },
+  {
+    "label": "Mayotte",
+    "aliases": [
+      "Maiote"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Mianmar",
+    "aliases": [
+      "Myanmar",
+      "Birmânia"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Micronésia",
+    "aliases": [
+      "Estados Federados da Micronésia"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Moldávia",
+    "aliases": [
+      "Moldova"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Mongólia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Montenegro",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Montserrat",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Moçambique",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "México",
+    "aliases": [],
+    "rarity": 0.08
+  },
+  {
+    "label": "Mônaco",
+    "aliases": [
+      "Mónaco"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Namíbia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Nauru",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Nepal",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Nicarágua",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Nigéria",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Niue",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Noruega",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Nova Caledônia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Nova Zelândia",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Níger",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Omã",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Palau",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Palestina",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Panamá",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Papua-Nova Guiné",
+    "aliases": [
+      "Papua Nova Guiné"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Paquistão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Paraguai",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "País de Gales",
+    "aliases": [
+      "Gales"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Países Baixos",
+    "rarity": 0.32,
+    "aliases": [
+      "Holanda"
+    ]
+  },
+  {
+    "label": "Peru",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Pitcairn",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Polinésia Francesa",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Polônia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Porto Rico",
+    "aliases": [
+      "Puerto Rico"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Portugal",
+    "rarity": 0.08,
+    "aliases": []
+  },
+  {
+    "label": "Quirguistão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Quênia",
+    "rarity": 0.65,
+    "aliases": [
+      "Quénia"
+    ]
+  },
+  {
+    "label": "Reino Unido",
+    "aliases": [
+      "Grã-Bretanha"
+    ],
+    "rarity": 0.08
+  },
+  {
+    "label": "República Centro-Africana",
+    "rarity": 0.65,
+    "aliases": [
+      "República Centro Africana"
+    ]
+  },
+  {
+    "label": "República Democrática do Congo",
+    "rarity": 0.65,
+    "aliases": [
+      "RDC",
+      "Congo-Kinshasa"
+    ]
+  },
+  {
+    "label": "República Dominicana",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "República do Congo",
+    "rarity": 0.65,
+    "aliases": [
+      "Congo",
+      "Congo-Brazzaville"
+    ]
+  },
+  {
+    "label": "Reunião",
+    "aliases": [
+      "Ilha da Reunião"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Romênia",
+    "rarity": 0.65,
+    "aliases": [
+      "Roménia"
+    ]
+  },
+  {
+    "label": "Ruanda",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Rússia",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Samoa",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Samoa Americana",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "San Marino",
+    "aliases": [
+      "São Marinho"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Santa Helena",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Santa Lúcia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Seicheles",
+    "rarity": 0.65,
+    "aliases": [
+      "Seychelles"
+    ]
+  },
+  {
+    "label": "Senegal",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Serra Leoa",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Singapura",
+    "aliases": [
+      "Cingapura"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Somália",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Sri Lanka",
+    "aliases": [
+      "Sri Lanca"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Sudão",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Sudão do Sul",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Suriname",
+    "rarity": 0.65,
+    "aliases": [
+      "Surinam"
+    ]
+  },
+  {
+    "label": "Suécia",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Suíça",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Svalbard",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "São Cristóvão e Névis",
+    "aliases": [
+      "São Cristóvão e Nevis",
+      "Saint Kitts e Nevis"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "São Martinho",
+    "aliases": [
+      "Saint Martin",
+      "Sint Maarten"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "São Tomé e Príncipe",
+    "rarity": 1,
+    "aliases": [
+      "São Tomé"
+    ]
+  },
+  {
+    "label": "São Vicente e Granadinas",
+    "aliases": [
+      "São Vicente e as Granadinas"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Sérvia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Síria",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Tailândia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Taiwan",
+    "aliases": [
+      "Formosa"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Tajiquistão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Tanzânia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Tchéquia",
+    "rarity": 0.65,
+    "aliases": [
+      "República Tcheca",
+      "Chéquia"
+    ]
+  },
+  {
+    "label": "Timor-Leste",
+    "rarity": 0.65,
+    "aliases": [
+      "Timor Leste"
+    ]
+  },
+  {
+    "label": "Togo",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Tonga",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Trinidad e Tobago",
+    "aliases": [
+      "Trindade e Tobago"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Tunísia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Turcomenistão",
+    "aliases": [
+      "Turquemenistão"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Turquia",
+    "aliases": [],
+    "rarity": 0.32
+  },
+  {
+    "label": "Tuvalu",
+    "aliases": [],
+    "rarity": 1
+  },
+  {
+    "label": "Ucrânia",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Uganda",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Uruguai",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Uzbequistão",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Vanuatu",
+    "aliases": [],
+    "rarity": 0.85
+  },
+  {
+    "label": "Vaticano",
+    "aliases": [
+      "Cidade do Vaticano"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Venezuela",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Vietnã",
+    "aliases": [
+      "Vietname",
+      "Vietnam"
+    ],
+    "rarity": 0.85
+  },
+  {
+    "label": "Zimbábue",
+    "rarity": 0.65,
+    "aliases": [
+      "Zimbabwe",
+      "Zimbabué"
+    ]
+  },
+  {
+    "label": "Zâmbia",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "África do Sul",
+    "rarity": 0.32,
+    "aliases": []
+  },
+  {
+    "label": "Áustria",
+    "rarity": 0.65,
+    "aliases": []
+  },
+  {
+    "label": "Índia",
+    "aliases": [],
+    "rarity": 0.32
+  }
+]
